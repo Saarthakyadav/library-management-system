@@ -1,0 +1,26 @@
+{
+  "name": "library-management-system",
+  "version": "1.0.0",
+  "description": "This is a LMS API backend for the management of users and the books",
+  "main": "index.js",
+  "scripts": {
+    "start" : "node index.js",
+    "dev" : "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Saarthakyadav/library-management-system.git"
+  },
+  "author": "Saarthak Yadav",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Saarthakyadav/library-management-system/issues"
+  },
+  "homepage": "https://github.com/Saarthakyadav/library-management-system#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
