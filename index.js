@@ -1,4 +1,8 @@
 const express = require("express")
+const {users} = require("./Data/users.json")
+
+const userRoutes = require("./routes/users")
+const bookRoutes = require("./routes/books")
 
 const app = express()
 
@@ -11,6 +15,14 @@ app.get("/" , (req , res)=>{
     message : "Home Page :-)"
   })
 })
+
+app.use("/users" , userRoutes)
+app.use("/books" , bookRoutes)
+
+
+
+
+
 
 // app.all("*" , (req , res)=>{
 //   res.status(500).json({
