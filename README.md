@@ -56,4 +56,19 @@ npm run dev
 To restore node_modules and package-lock.json --> npm i/npm install
 
 
+npm i mongoose
+npm install mongodb
 
+npm i dotenv
+
+
+mongodb+srv://sy06958_db_user:%3CPyYvzkwneNYh9Cmk%3E@cluster0.zdkk7nk.mongodb.net/?appName=Cluster0
+
+## MVC architecture
+  >> M : Model(structure of our MongoDB)
+  >> V : view (frontend)
+  >> C : controllers (brain / logic of the routes)
+
+
+
+### DTO (Data Transfer Object)

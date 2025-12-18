@@ -1,10 +1,20 @@
 const express = require("express")
 const {users} = require("./Data/users.json")
 
+const dotenv = require("dotenv")
+
 const userRoutes = require("./routes/users")
 const bookRoutes = require("./routes/books")
 
+dotenv.config();
+
+// import db connection
+
+const DbConnection = require("./databaseConnection")
+
 const app = express()
+
+DbConnection()
 
 const PORT = 8081
 
@@ -18,10 +28,6 @@ app.get("/" , (req , res)=>{
 
 app.use("/users" , userRoutes)
 app.use("/books" , bookRoutes)
-
-
-
-
 
 
 // app.all("*" , (req , res)=>{
